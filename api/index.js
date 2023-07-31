@@ -429,6 +429,7 @@ app.use("/api/orders", orderRoute);
 // Stripe Api
 // -------------------------Stripe File---------------------------------- //
 
-app.listen(process.env.PORT || 5000, () => {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
 	console.log("Backend server up and running...");
 });
